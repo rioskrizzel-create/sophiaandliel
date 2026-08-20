@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sophia & Liel | Save the Date</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --cream:#f8f4ec;
+    --cream-dark:#eee8dc;
+    --teal:#2d6667;
+    --navy:#273443;
+    --muted:#6d746f;
+    --line:#ddd7ca;
+    --white:#fffdf9;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:var(--cream);
+    color:var(--navy);
+    font-family:"Cormorant Garamond", Georgia, serif;
+    line-height:1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    background:rgba(248,244,236,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:14px 28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:var(--teal);
+    font-family:"Cormorant Garamond",serif;
+    font-size:30px;
+    letter-spacing:-.04em;
+}
+
+.logo span{
+    color:var(--navy);
+    font-family:"Allura",cursive;
+    font-size:36px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:27px;
+}
+
+.nav-links a{
+    color:var(--navy);
+    text-decoration:none;
+    font-family:"Montserrat",sans-serif;
+    font-size:10px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+}
+
+.nav-links a:hover{
+    color:var(--teal);
+}
+
+.nav-rsvp{
+    background:var(--teal);
+    color:white !important;
+    padding:11px 20px;
+    border-radius:3px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    padding-top:72px;
+
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248,244,236,.97) 0%,
+            rgba(248,244,236,.82) 38%,
+            rgba(248,244,236,.12) 70%,
+            rgba(248,244,236,.04) 100%
+        ),
+        url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=2000&q=90")
+        center/cover no-repeat;
+}
+
+.hero-content{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 7%;
+}
+
+.names{
+    max-width:520px;
+}
+
+.sophia-name{
+    display:block;
+
+    color:var(--teal);
+
+    font-family:"Cormorant Garamond",serif;
+
+    /* BIGGER */
+    font-size:clamp(100px,14vw,175px);
+
+    line-height:.72;
+    letter-spacing:-.055em;
+    font-weight:400;
+}
+
+.sophia-name {
+    display: block;
+
+    color: var(--teal);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(130px, 16vw, 210px);
+
+    line-height: .68;
+
+    font-weight: 400;
+
+    letter-spacing: -0.06em;
+}
+
+
+.second-line {
+    display: flex;
+
+    align-items: center;
+
+    margin-left: 110px;
+
+    margin-top: 15px;
+}
+
+
+.liel-name {
+    color: var(--navy);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(130px, 16vw, 210px);
+
+    line-height: .68;
+
+    font-weight: 400;
+
+    letter-spacing: -0.06em;
+}
+
+
+.ampersand {
+    color: var(--navy);
+
+    font-family: "Allura", cursive;
+
+    font-size: clamp(105px, 12vw, 160px);
+
+    line-height: 1;
+
+    margin-right: 15px;
+
+    position: relative;
+
+    top: -8px;
+}
+
+.hero-script{
+    display:block;
+
+    color:var(--navy);
+
+    font-family:"Allura",cursive;
+
+    /* BIGGER */
+    font-size:clamp(120px,15vw,190px);
+
+    line-height:.75;
+
+    margin-left:105px;
+}
+
+.save{
+    margin-top:45px;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:11px;
+    letter-spacing:.32em;
+
+    color:var(--navy);
+    text-transform:uppercase;
+}
+
+.date{
+    margin-top:18px;
+
+    color:var(--teal);
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+
+    letter-spacing:.16em;
+}
+
+.place{
+    margin-top:7px;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:13px;
+
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+}
+
+.btn{
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:18px 42px;
+
+    background:var(--teal);
+    color:#fff;
+
+    text-decoration:none;
+    border-radius:3px;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:13px;
+
+    letter-spacing:.20em;
+
+    text-transform:uppercase;
+}
+
+.btn:hover{
+    opacity:.88;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    padding:90px 25px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.center{
+    text-align:center;
+}
+
+.kicker{
+    color:var(--teal);
+
+    font-family:"Montserrat",sans-serif;
+    font-size:11px;
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+}
+
+h2{
+    color:var(--teal);
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:52px;
+    font-weight:500;
+
+    line-height:1;
+    margin:13px 0 20px;
+}
+
+.intro{
+    max-width:680px;
+    margin:auto;
+
+    color:#5f6865;
+    font-size:17px;
+}
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.icon-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+
+    margin-top:55px;
+
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.icon-card{
+    padding:32px 20px;
+
+    border-right:1px solid var(--line);
+}
+
+.icon-card:last-child{
+    border-right:0;
+}
+
+.icon{
+    color:var(--teal);
+    font-family:Arial,sans-serif;
+    font-size:30px;
+
+    margin-bottom:10px;
+}
+
+.icon-card h3{
+    font-family:"Cormorant Garamond",serif;
+    font-size:20px;
+    font-weight:500;
+
+    letter-spacing:.1em;
+
+    margin:0 0 8px;
+
+    text-transform:uppercase;
+}
+
+.icon-card p{
+    color:var(--muted);
+
+    font-size:14px;
+
+    max-width:160px;
+    margin:0 auto 12px;
+}
+
+.text-link{
+    color:var(--teal);
+
+    text-decoration:none;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:10px;
+    letter-spacing:.13em;
+
+    text-transform:uppercase;
+}
+
+/* =========================
+   TRAVEL
+========================= */
+
+.sand{
+    background:var(--cream-dark);
+}
+
+.travel-grid{
+    display:grid;
+    border:1px solid var(--line);
+}
+.travel-content{
+    padding:55px;
+    background:var(--cream);
+}
+
+.travel-content h3,
+.stay-content h3{
+    font-family:"Cormorant Garamond",serif;
+    font-size:30px;
+    font-weight:500;
+
+    color:var(--navy);
+
+    margin:8px 0 12px;
+}
+
+.travel-content p,
+.stay-content p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+.details{
+    margin:25px 0;
+}
+
+.detail{
+    padding:8px 0;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:11px;
+
+    color:var(--muted);
+}
+
+/* =========================
+   STAY
+========================= */
+
+.stay-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-top:45px;
+}
+
+.stay-content{
+    padding:35px;
+
+    border:1px solid var(--line);
+    background:var(--white);
+}
+
+.stay-list{
+    list-style:none;
+
+    padding:0;
+    margin:25px 0 0;
+}
+
+.stay-list li{
+    border-top:1px solid var(--line);
+
+    padding:13px 0;
+
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* =========================
+   WEDDING WEEKEND
+========================= */
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    margin-top:55px;
+
+    position:relative;
+}
+
+.timeline:before{
+    content:"";
+
+    position:absolute;
+
+    top:24px;
+    left:10%;
+    right:10%;
+
+    height:1px;
+
+    background:var(--line);
+}
+
+.event{
+    position:relative;
+
+    text-align:center;
+
+    padding:0 15px;
+}
+
+.event-circle{
+    width:50px;
+    height:50px;
+
+    margin:auto;
+
+    background:var(--cream);
+
+    border:1px solid var(--line);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+    z-index:1;
+
+    color:var(--teal);
+}
+
+.event h3{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:20px;
+    font-weight:500;
+
+    margin:18px 0 2px;
+}
+
+.event-date{
+    color:var(--teal);
+
+    font-family:"Montserrat",sans-serif;
+    font-size:9px;
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+.event p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp-section{
+    background:
+        linear-gradient(
+            rgba(248,244,236,.92),
+            rgba(248,244,236,.92)
+        ),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+}
+
+.rsvp-box{
+    max-width:700px;
+    margin:auto;
+
+    text-align:center;
+}
+
+.script{
+    font-family:"Allura",cursive;
+
+    color:var(--navy);
+
+    font-size:48px;
+    line-height:1;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+    max-width:800px;
+
+    margin:40px auto 0;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+}
+
+details{
+    border:1px solid var(--line);
+
+    background:var(--white);
+
+    padding:15px 20px;
+
+    text-align:left;
+}
+
+summary{
+    cursor:pointer;
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:18px;
+}
+
+details p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--cream);
+
+    border-top:1px solid var(--line);
+
+    text-align:center;
+
+    padding:55px 25px;
+}
+
+.footer-logo{
+    color:var(--teal);
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+}
+
+.footer-logo span{
+    color:var(--navy);
+
+    font-family:"Allura",cursive;
+
+    font-size:48px;
+}
+
+footer p{
+    color:var(--muted);
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:9px;
+    letter-spacing:.2em;
+
+    text-transform:uppercase;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        background:
+            linear-gradient(
+                rgba(248,244,236,.88),
+                rgba(248,244,236,.45)
+            ),
+            url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=85")
+            center/cover;
+    }
+
+    .hero-content{
+        padding:90px 25px;
+        text-align:center;
+    }
+
+    .names{
+        margin:auto;
+    }
+
+    .hero-script{
+        margin-left:0;
+    }
+
+    .icon-grid,
+    .travel-grid,
+    .stay-grid,
+    .timeline,
+    .faq{
+        grid-template-columns:1fr;
+    }
+
+    .icon-card{
+        border-right:0;
+        border-bottom:1px solid var(--line);
+    }
+
+    .travel-photo{
+        min-height:280px;
+    }
+
+    .travel-content{
+        padding:35px 25px;
+    }
+
+    .timeline:before{
+        display:none;
+    }
+
+    .event{
+        margin-bottom:30px;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
+    h2{
+        font-size:44px;
+    }
+}
+
+/* =========================
+   OUR WEDDING SECTION
+========================= */
+
+#wedding{
+    background:#f8f4ec;
+    padding:95px 7%;
+}
+
+.wedding-note-grid{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:75px;
+
+    align-items:center;
+}
+
+
+/* LEFT SIDE */
+
+.wedding-message{
+    max-width:570px;
+}
+
+.wedding-message .kicker{
+    color:#2d6667;
+
+    font-family:"Montserrat", sans-serif;
+    font-size:10px;
+
+    letter-spacing:.32em;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+}
+
+.wedding-quote{
+    color:#2d6667;
+
+    font-family:"Cormorant Garamond", Georgia, serif;
+
+    font-size:clamp(40px,4vw,58px);
+
+    font-weight:400;
+
+    line-height:1.05;
+
+    letter-spacing:-.025em;
+
+    margin-bottom:30px;
+}
+
+.wedding-message p{
+    max-width:520px;
+
+    margin:0;
+
+    color:#66717d;
+
+    font-family:"Montserrat", sans-serif;
+
+    font-size:15px;
+
+    line-height:1.95;
+}
+
+
+/* RIGHT SIDE CARD */
+
+.details-card{
+    background:rgba(255,253,249,.75);
+
+    border:1px solid #d6d0c5;
+
+    padding:34px 35px 30px;
+}
+
+.details-heading{
+    color:#2d6667;
+
+    font-family:"Montserrat", sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:.30em;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+}
+
+
+/* DETAILS */
+
+.detail-row{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:22px 0;
+
+    border-bottom:1px solid #d6d0c5;
+}
+
+.detail-row:last-child{
+    border-bottom:0;
+
+    padding-bottom:5px;
+}
+
+.detail-icon{
+    color:#df927e;
+
+    font-size:23px;
+
+    line-height:1;
+
+    width:18px;
+
+    flex-shrink:0;
+}
+
+.detail-label{
+    color:#6c7781;
+
+    font-family:"Montserrat", sans-serif;
+
+    font-size:9px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    margin-bottom:4px;
+}
+
+.detail-value{
+    color:#4f5962;
+
+    font-family:"Cormorant Garamond", Georgia, serif;
+
+    font-size:20px;
+
+    line-height:1.2;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    #wedding{
+        padding:70px 22px;
+    }
+
+    .wedding-note-grid{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .wedding-quote{
+        font-size:42px;
+    }
+
+    .details-card{
+        padding:28px 24px;
+    }
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+
+/* =========================
+   SAVE-THE-DATE EDITORIAL STYLE
+   Inspired by the provided vintage coastal invitation
+========================= */
+:root{
+    --cream:#f4f0e8;
+    --cream-dark:#e9e3d8;
+    --teal:#77736b;
+    --navy:#5d5a54;
+    --muted:#817d75;
+    --line:#d3cec4;
+    --white:#faf7f0;
+    --peach:#9a948a;
+}
+
+body{
+    background:var(--cream);
+    color:var(--navy);
+    font-family:"Cormorant Garamond", Georgia, serif;
+}
+
+nav{
+    background:rgba(244,240,232,.94);
+    border-bottom:1px solid var(--line);
+}
+
+.logo{
+    color:var(--navy);
+    font-family:"Italianno", "Allura", cursive;
+    font-size:36px;
+    letter-spacing:0;
+}
+
+.logo span{color:var(--navy);font-family:"Italianno", "Allura", cursive;font-size:40px}
+
+.nav-links a{
+    color:var(--navy);
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:.18em;
+}
+
+.nav-links a:hover{color:#8a857c}
+
+.nav-rsvp,
+.btn{
+    background:#6f6b63;
+    color:#fdfaf4 !important;
+    border-radius:0;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-weight:600;
+    letter-spacing:.18em;
+}
+
+.hero{
+    background:
+        linear-gradient(
+            rgba(244,240,232,.78),
+            rgba(244,240,232,.78)
+        ),
+        url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=2000&q=90")
+        center/cover no-repeat;
+    background-blend-mode:luminosity;
+}
+
+.hero-content{text-align:center}
+.names{max-width:none;margin:auto}
+
+.sophia-name,
+.liel-name{
+    color:#6f6b64;
+    font-family:"Italianno", "Allura", cursive;
+    font-size:clamp(78px,10vw,125px);
+    line-height:.85;
+    font-weight:400;
+    letter-spacing:0;
+}
+
+.sophia-name{display:inline-block}
+
+.second-line{
+    justify-content:center;
+    margin-left:0;
+    margin-top:0;
+}
+
+.ampersand{
+    color:#77736b;
+    font-family:"Italianno", "Allura", cursive;
+    font-size:clamp(55px,7vw,90px);
+    margin-right:12px;
+    top:-3px;
+}
+
+.save,
+.place,
+.kicker,
+.details-heading,
+.detail-label,
+.event-date,
+.text-link,
+footer p{
+    font-family:"Cormorant Garamond", Georgia, serif;
+    color:#77736b;
+    font-weight:600;
+    letter-spacing:.25em;
+}
+
+.save{
+    margin-top:38px;
+    font-size:13px;
+}
+
+.date{
+    color:#68645d;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:28px;
+    font-weight:500;
+    letter-spacing:.2em;
+}
+
+.place{font-size:13px;letter-spacing:.28em}
+
+section{background:var(--cream)}
+.sand{background:var(--cream-dark)}
+
+h2{
+    color:#6c6861;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-weight:500;
+}
+
+.intro,
+.travel-content p,
+.stay-content p,
+.icon-card p,
+.event p,
+details p{
+    color:#77736b;
+}
+
+.icon,
+.event-circle,
+.footer-logo,
+.wedding-message .kicker,
+.wedding-quote,
+.details-heading,
+.detail-icon,
+.detail-value,
+.success h2{
+    color:#77736b;
+}
+
+.icon-card,
+.travel-grid,
+.stay-content,
+.details-card,
+details{
+    border-color:var(--line);
+    background:rgba(250,247,240,.72);
+}
+
+.details-card{background:rgba(250,247,240,.82);border-color:var(--line)}
+.detail-row{border-bottom-color:var(--line)}
+.detail-value{font-family:"Cormorant Garamond",Georgia,serif;color:#625f58}
+.detail-label{color:#807b73}
+.detail-icon{color:#8c877f}
+
+.wedding-message p{font-family:"Cormorant Garamond",Georgia,serif;color:#77736b;font-size:18px;line-height:1.7}
+.wedding-quote{font-family:"Italianno","Allura",cursive;font-size:clamp(52px,5vw,72px);line-height:.95}
+
+.rsvp-section{
+    background:
+        linear-gradient(rgba(244,240,232,.91),rgba(244,240,232,.91)),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    background-blend-mode:luminosity;
+}
+
+.script{
+    font-family:"Italianno","Allura",cursive;
+    color:#6f6b64;
+    font-size:64px;
+}
+
+footer{background:var(--cream);border-top-color:var(--line)}
+.footer-logo{font-family:"Italianno","Allura",cursive;font-size:52px}
+.footer-logo span{font-family:"Italianno","Allura",cursive;color:#77736b;font-size:56px}
+
+@media(max-width:800px){
+    .hero-content{padding:90px 25px}
+    .sophia-name,.liel-name{font-size:clamp(70px,19vw,105px)}
+    .ampersand{font-size:70px}
+    .save{font-size:12px}
+    .date{font-size:25px}
+}
+
+
+
+.room-rates {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border: 1.5px solid #b8b1a7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background: var(--white);
+}
+
+.room-rates th,
+.room-rates td {
+    border: 1px solid #c8c1b7;
+    padding: 17px 18px;
+    text-align: left;
+}
+
+.room-rates th {
+    color: var(--navy);
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: var(--cream-dark);
+    padding: 18px;
+}
+
+.room-rates td {
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.room-rates td:last-child {
+    white-space: nowrap;
+    font-weight: 500;
+    text-align: right;
+}
+
+.rate-note {
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .room-rates {
+        font-size: 12px;
+    }
+
+    .room-rates th,
+    .room-rates td {
+        padding: 13px 10px;
+    }
+
+    .room-rates th {
+        font-size: 9px;
+    }
+
+    .room-rates td {
+        font-size: 12px;
+    }
+}
+
+.hotel-reservation-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.stay-list {
+    text-align: left;
+}
+
+.reservation-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="nav-inner">
+
+        <div class="logo">
+            Sophia + Liel</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#wedding">
+                Our Wedding
+            </a>
+
+            <a href="#travel">
+                Travel
+            </a>
+
+            <a href="#stay">
+                Stay
+            </a>
+
+            <a href="#weekend">
+                Wedding Celebration
+            </a>
+
+            <a class="nav-rsvp" href="rsvp.html">
+                RSVP NOW
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+       <div class="names">
+
+    <span class="sophia-name">
+        Sophia
+    </span>
+
+    <div class="second-line">
+
+        <span class="ampersand">
+            &amp;
+        </span>
+
+        <span class="liel-name">
+            Liel
+        </span>
+
+    </div>
+
+</div>
+        <div class="save">
+            Save the Date
+        </div>
+
+        <div class="date">
+            March 16, 2027
+        </div>
+
+        <div class="place">
+            Punta Mita, Mexico
+        </div>
+
+        <a class="btn" href="rsvp.html">
+            RSVP NOW
+        </a>
+
+    </div>
+
+</header>
+
+         
+<!-- =========================
+     TRAVEL
+========================= -->
+
+<section class="sand" id="travel">
+
+    <div class="container">
+
+        <div class="center">
+
+            <div class="kicker">
+                Getting There
+            </div>
+
+            <h2>
+                Travel Information
+            </h2>
+
+        </div>
+
+
+        <div class="travel-grid">
+
+
+            <div class="travel-photo"></div>
+
+
+            <div class="travel-content">
+
+                <div class="kicker">
+                    Recommended Airport
+                </div>
+
+                <h3>
+                    Puerto Vallarta International Airport (PVR)
+                </h3>
+
+                <p>
+
+                    We recommend flying into Puerto Vallarta International Airport (PVR) in Puerto Vallarta, Jalisco, Mexico. From the airport, guests can continue to Punta Mita by private transfer, taxi, or rental car.
+
+                </p>
+
+
+                <div class="details">
+
+
+                    <div class="detail">
+                        ◎ Approximately 45 minutes to Punta Mita
+                    </div>
+
+                    <div class="detail">
+                        ◎ Transportation options available
+                    </div>
+
+                </div>
+
+
+                <!-- Replace # with actual travel information link -->
+
+                <a class="btn" href="#">
+                    VIEW TRAVEL DETAILS
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STAY
+========================= -->
+
+<section id="stay">
+
+    <div class="container">
+
+        <div class="center">
+
+            <div class="kicker">
+                Where to Stay
+            </div>
+
+            <h2>
+                Your Stay
+            </h2>
+
+        </div>
+
+
+        <div class="stay-grid">
+
+
+            <div class="stay-content center">
+
+                <div class="kicker">
+                    Hotel Information
+                </div>
+
+                <h3>
+                    Conrad Punta de Mita
+                </h3>
+
+                <p>
+
+                    We have reserved a room block
+                    at our favorite resort.
+
+                    Use our special link to book
+                    and enjoy exclusive rates.
+
+                </p>
+               
+
+                 <div class="stay-content">
+
+                  <h2 class="hotel-reservations-title">Hotel Reservations</h2>
+                </p>
+                <ul class="stay-list">
+                    <p>A limited number of rooms have been reserved for our guests at a special wedding rate. We encourage you to book early, as rooms at this rate are limited and subject to availability.</p>
+
+                    <li>
+                       <p>➤ <strong>Book Your Room</strong></p>
+
+                        <p>
+                   To receive our special wedding rate, please make your initial reservation through the dedicated booking button below:
+                   <br>
+                   <br>
+                  <strong> Wedding Stay Dates</strong>
+                   <br>
+                   <br>
+                    ✸ Check-in: March 14 or March 15, 2027 
+                    <br>
+                    ✸ Check-out: March 17, 2027
+                    <br>
+                    <br>
+
+                    Please note that the dedicated booking link is valid only for reservations within these dates
+
+                </p>
+                    </li>
+
+                    <li>
+                       <p> ➤ <strong>Upgrades, Extended Stays & Special Requests </strong></p>
+
+                        <p>
+                   After completing your reservation through the dedicated link, guests wishing to upgrade their room, extend their stay, or make a special request may contact the Conrad Punta de Mita Reservations Department directly:
+                   <br>
+                   <br>
+                   ✸ Email: cpm.reservations@ConradHotels.com
+                   <br>
+                    ✸ Phone: +52 329 298 4300
+                   <br>
+                   <br>
+                  To ensure you receive the special wedding rate for Sophia Ratner-Stauber & Liel Amenu’s wedding, please contact the hotel directly using the email address or phone number above. The Hilton International Reservations Call Center does not have access to our special wedding rates.
+                    <br>
+                     <br>
+                   <strong> Reservations Hours </strong>
+                    <br>
+                    <br>
+                   ✸ Monday–Friday: 9:00 AM–7:30 PM Central Time
+                   <br>
+                    ✸ Saturday–Sunday: 9:00 AM–6:00 PM Central Time
+
+
+                </p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+                <!-- Replace # with hotel booking URL -->
+
+                <a class="btn" href="https://book.passkey.com/event/51313548/owner/50259214/home?mobile=false">
+                    BOOK YOUR STAY
+                </a>
+
+            </div>
+
+
+            <div class="stay-content">
+                <center> <h3>Wedding Room Rates</h3> </center>
+
+                <table class="room-rates">
+        <thead>
+            <tr>
+                <th>Room Type</th>
+                <th>Wedding Contract</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Tropical View One King Bed</td>
+                <td>$359 USD++</td>
+            </tr>
+            <tr>
+                <td>Ocean View One King Bed</td>
+                <td>$399 USD++</td>
+            </tr>
+            <tr>
+                <td>Ocean View Two Queen Beds</td>
+                <td>$399 USD++</td>
+            </tr>
+            <tr>
+                <td>Beachfront One King Bed</td>
+                <td>$528 USD++</td>
+            </tr>
+            <tr>
+                <td>Superior Ocean View Suite One King Bed</td>
+                <td>$658 USD++</td>
+            </tr>
+            <tr>
+                <td>Signature Ocean View Suite One King Bed</td>
+                <td>$738 USD++</td>
+            </tr>
+            <tr>
+                <td>Beachfront Signature Suite One King Bed</td>
+                <td>$818 USD++</td>
+            </tr>
+            <tr>
+                <td>Beachfront Premier Suite One King Bed</td>
+                <td>$858 USD++</td>
+            </tr>
+            <tr>
+                <td>Penthouse</td>
+                <td>$1,800 USD++</td>
+            </tr>
+            <tr>
+                <td>Grand Suite Beachfront</td>
+                <td>$1,800 USD++</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    Please note: A limited number of rooms have been reserved at our special wedding rates. 
+    We encourage guests to book early to secure the reduced rate, as rooms are subject to availability.
+</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WEDDING WEEKEND
+========================= -->
+
+<section class="sand" id="weekend">
+
+    <div class="container center">
+
+        <div class="kicker">
+            Celebrating Together
+        </div>
+
+        <h2>
+            Wedding Celebration
+        </h2>
+
+
+
+        <div class="timeline">
+
+
+            <div class="event">
+
+                <div class="event-circle">
+                    ♡
+                </div>
+
+                <div class="event-date">
+                    March 15, 2027
+                </div>
+
+                <h3>
+                    Welcome Dinner
+                </h3>
+                  <p>
+                    Conrad Punta de Mita
+                </p>
+
+
+            </div>
+
+             <div class="event">
+
+                <div class="event-circle">
+                   ✧
+                </div>
+
+                <div class="event-date">
+                    March 16, 2027
+                </div>
+
+                <h3>
+                    Brunch
+                </h3>
+
+                <p>
+                    Conrad Punta de Mita
+                </p>
+
+            </div>
+
+            <div class="event">
+
+                <div class="event-circle">
+                    ♢
+                </div>
+
+                <div class="event-date">
+                    March 16, 2027
+                </div>
+
+                <h3>
+                    Wedding Ceremony
+                </h3>
+
+                <p>
+                    Ceremony at 5:00 PM
+                    <br> Papelillo - Punta Mita
+                </p>
+
+            </div>
+            <div class="event">
+
+                <div class="event-circle">
+                    ☼
+                </div>
+
+                <div class="event-date">
+                    March 17, 2026
+                </div>
+
+                <h3>
+                    Farewell Brunch
+                </h3>
+
+                <p>
+                    Conrad Punta de Mita
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RSVP
+========================= -->
+
+<section class="rsvp-section" id="rsvp">
+
+    <div class="rsvp-box">
+
+        <div class="kicker">
+            We Hope You Can Join Us!
+        </div>
+
+        <h2>
+            RSVP
+        </h2>
+
+        <div class="script">
+            We hope you can join us!
+        </div>
+
+    <br>
+
+        <p class="intro">
+
+            Kindly RSVP by the deadline below
+            so we can make the proper arrangements.
+
+        </p>
+
+
+        <!-- Replace # with actual RSVP link -->
+
+        <a class="btn" href="rsvp.html">
+            RSVP NOW
+        </a>
+
+
+        <p style="
+            margin-top:18px;
+            font-family:Montserrat,sans-serif;
+            font-size:10px;
+            letter-spacing:.16em;
+            text-transform:uppercase;
+            color:#6d746f;
+        ">
+
+            RSVP deadline coming soon
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        Sophia
+        <span>&amp; Liel</span>
+
+    </div>
+
+    <p>
+        March 16, 2027 · Punta Mita, Mexico
+    </p>
+
+    <p>
+        We Can't Wait to Celebrate With You!
+    </p>
+
+</footer>
+
+
+</body>
+</html>
