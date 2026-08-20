@@ -9,9 +9,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+@font-face{
+    font-family:"Gradientine Signature";
+    src:url("https://db.onlinewebfonts.com/t/5be9b310ae7f8db70fa685103f9084e1.woff2") format("woff2");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
 
 :root{
     --cream:#f8f4ec;
@@ -73,7 +80,7 @@ nav{
 
 .logo span{
     color:var(--navy);
-    font-family:"Allura",cursive;
+    font-family:"Gradientine Signature",cursive;
     font-size:36px;
 }
 
@@ -198,7 +205,7 @@ nav{
 .ampersand {
     color: var(--navy);
 
-    font-family: "Allura", cursive;
+    font-family: "Gradientine Signature", cursive;
 
     font-size: clamp(105px, 12vw, 160px);
 
@@ -216,7 +223,7 @@ nav{
 
     color:var(--navy);
 
-    font-family:"Allura",cursive;
+    font-family:"Gradientine Signature",cursive;
 
     /* BIGGER */
     font-size:clamp(120px,15vw,190px);
@@ -583,7 +590,7 @@ h2{
 }
 
 .script{
-    font-family:"Allura",cursive;
+    font-family:"Gradientine Signature",cursive;
 
     color:var(--navy);
 
@@ -653,7 +660,7 @@ footer{
 .footer-logo span{
     color:var(--navy);
 
-    font-family:"Allura",cursive;
+    font-family:"Gradientine Signature",cursive;
 
     font-size:48px;
 }
@@ -918,7 +925,7 @@ footer p{
 
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
 
 
 /* =========================
@@ -949,12 +956,12 @@ nav{
 
 .logo{
     color:var(--navy);
-    font-family:"Italianno", "Allura", cursive;
+    font-family:"Gradientine Signature", cursive;
     font-size:36px;
     letter-spacing:0;
 }
 
-.logo span{color:var(--navy);font-family:"Italianno", "Allura", cursive;font-size:40px}
+.logo span{color:var(--navy);font-family:"Gradientine Signature", cursive;font-size:40px}
 
 .nav-links a{
     color:var(--navy);
@@ -993,27 +1000,32 @@ nav{
 .sophia-name,
 .liel-name{
     color:#6f6b64;
-    font-family:"Italianno", "Allura", cursive;
-    font-size:clamp(78px,10vw,125px);
-    line-height:.85;
+    font-family:"Gradientine Signature", cursive;
+    font-size:clamp(82px,10vw,132px);
+    line-height:.78;
     font-weight:400;
     letter-spacing:0;
+    display:inline-block;
 }
 
 .sophia-name{display:inline-block}
 
 .second-line{
     justify-content:center;
+    align-items:baseline;
     margin-left:0;
-    margin-top:0;
+    margin-top:6px;
+    gap:4px;
 }
 
 .ampersand{
     color:#77736b;
-    font-family:"Italianno", "Allura", cursive;
-    font-size:clamp(55px,7vw,90px);
-    margin-right:12px;
-    top:-3px;
+    font-family:"Gradientine Signature", cursive;
+    font-size:clamp(52px,6vw,82px);
+    line-height:1;
+    margin-right:6px;
+    top:0;
+    position:relative;
 }
 
 .save,
@@ -1091,7 +1103,7 @@ details{
 .detail-icon{color:#8c877f}
 
 .wedding-message p{font-family:"Cormorant Garamond",Georgia,serif;color:#77736b;font-size:18px;line-height:1.7}
-.wedding-quote{font-family:"Italianno","Allura",cursive;font-size:clamp(52px,5vw,72px);line-height:.95}
+.wedding-quote{font-family:"Gradientine Signature",cursive;font-size:clamp(52px,5vw,72px);line-height:.95}
 
 .rsvp-section{
     background:
@@ -1102,19 +1114,19 @@ details{
 }
 
 .script{
-    font-family:"Italianno","Allura",cursive;
+    font-family:"Gradientine Signature",cursive;
     color:#6f6b64;
     font-size:64px;
 }
 
 footer{background:var(--cream);border-top-color:var(--line)}
-.footer-logo{font-family:"Italianno","Allura",cursive;font-size:52px}
-.footer-logo span{font-family:"Italianno","Allura",cursive;color:#77736b;font-size:56px}
+.footer-logo{font-family:"Gradientine Signature",cursive;font-size:52px}
+.footer-logo span{font-family:"Gradientine Signature",cursive;color:#77736b;font-size:56px}
 
 @media(max-width:800px){
     .hero-content{padding:90px 25px}
-    .sophia-name,.liel-name{font-size:clamp(70px,19vw,105px)}
-    .ampersand{font-size:70px}
+    .sophia-name,.liel-name{font-size:clamp(66px,18vw,105px)}
+    .ampersand{font-size:62px}
     .save{font-size:12px}
     .date{font-size:25px}
 }
