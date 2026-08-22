@@ -114,25 +114,6 @@ nav{
    HERO
 ========================= */
 
-.hero{
-    min-height:100vh;
-    padding-top:72px;
-
-    display:flex;
-    align-items:center;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(248,244,236,.97) 0%,
-            rgba(248,244,236,.82) 38%,
-            rgba(248,244,236,.12) 70%,
-            rgba(248,244,236,.04) 100%
-        ),
-        url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=2000&q=90")
-        center/cover no-repeat;
-}
-
 .hero-content{
     width:100%;
     max-width:1200px;
@@ -1214,8 +1195,312 @@ footer{background:var(--cream);border-top-color:var(--line)}
 }
 
 
+.hero{
+    position:relative;
+    min-height:100vh;
+    padding-top:72px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:#f4f0e8;
+}
 
+.hero-image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:160%;
+    object-fit:cover;
+    object-position:center;
+    z-index:0;
+}
 
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    z-index:1;
+
+    background:linear-gradient(
+            rgba(244,240,232,.65),
+            rgba(244,240,232,.65)
+        );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 7%;
+}
+
+@media(max-width:800px){
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero-image{
+        object-position:center;
+    }
+
+    .hero-overlay{
+        background:linear-gradient(
+            rgba(244,240,232,.80),
+            rgba(244,240,232,.48)
+        );
+    }
+
+    .hero-content{
+        padding:90px 25px;
+    }
+}
+
+.rsvp-section{
+    min-height:500px;
+
+    background:
+        linear-gradient(
+            rgba(244,240,232,.50),
+            rgba(244,240,232,.50)
+        ),
+        url("https://drive.google.com/thumbnail?id=14x3ktwTtY-zjVNDe16Csr6MdJHCAht2n&sz=w2000")
+        center center / cover no-repeat;
+
+    background-blend-mode:normal;
+}
+
+/* =========================
+   DARKER TEXT - FINAL OVERRIDE
+========================= */
+
+/* Main text */
+body {
+    color: #3f3d39;
+}
+
+/* Navigation */
+.logo,
+.logo span {
+    color: #3f3d39;
+}
+
+.nav-links a {
+    color: #3f3d39;
+}
+
+.nav-links a:hover {
+    color: #4f5f5d;
+}
+
+/* HERO */
+.sophia-name,
+.liel-name {
+    color: #45433f;
+}
+
+.ampersand {
+    color: #45433f;
+}
+
+.save {
+    color: #403e3a;
+}
+
+.date {
+    color: #45433f;
+}
+
+.place {
+    color: #403e3a;
+}
+
+/* Buttons */
+.nav-rsvp,
+.btn {
+    background: #4d4a45;
+    color: #fffdf8 !important;
+}
+
+/* Section headings */
+.kicker {
+    color: #4f4c47;
+}
+
+h2 {
+    color: #484641;
+}
+
+.intro {
+    color: #4f4d48;
+}
+
+/* Quick links */
+.icon {
+    color: #55514b;
+}
+
+.icon-card h3 {
+    color: #45423e;
+}
+
+.icon-card p {
+    color: #57544e;
+}
+
+.text-link {
+    color: #4d4a45;
+}
+
+/* Travel */
+.travel-content h3,
+.stay-content h3 {
+    color: #45423e;
+}
+
+.travel-content p,
+.stay-content p {
+    color: #514e48;
+}
+
+.detail {
+    color: #514e48;
+}
+
+/* Stay */
+.stay-list li {
+    color: #514e48;
+}
+
+.stay-list p {
+    color: #514e48;
+}
+
+.hotel-reservations-title,
+.reservation-heading {
+    color: #45423e;
+}
+
+/* Wedding weekend */
+.event-circle {
+    color: #55514b;
+}
+
+.event h3 {
+    color: #45423e;
+}
+
+.event-date {
+    color: #4f4c47;
+}
+
+.event p {
+    color: #514e48;
+}
+
+/* Wedding section */
+.wedding-message .kicker {
+    color: #4f4c47;
+}
+
+.wedding-quote {
+    color: #45423e;
+}
+
+.wedding-message p {
+    color: #4d4a45;
+}
+
+.details-heading {
+    color: #4f4c47;
+}
+
+.detail-label {
+    color: #57534d;
+}
+
+.detail-value {
+    color: #403e39;
+}
+
+.detail-icon {
+    color: #666159;
+}
+
+/* RSVP */
+.rsvp-section .kicker {
+    color: #45423e;
+}
+
+.rsvp-section h2 {
+    color: #403e3a;
+}
+
+.script {
+    color: #45423e;
+}
+
+.rsvp-section .intro {
+    color: #4d4a45;
+}
+
+.rsvp-section p {
+    color: #4d4a45 !important;
+}
+
+/* FAQ */
+summary {
+    color: #45423e;
+}
+
+details p {
+    color: #514e48;
+}
+
+/* Room rates */
+.room-rates th {
+    color: #403d38;
+}
+
+.room-rates td {
+    color: #45423e;
+}
+
+.rate-note {
+    color: #514e48;
+}
+
+/* Footer */
+.footer-logo,
+.footer-logo span {
+    color: #45423e;
+}
+
+footer p {
+    color: #514f49;
+}
+
+/* =========================
+   HERO OVERLAY
+   Keep image visible but text readable
+========================= */
+
+.hero-overlay {
+    background: linear-gradient(
+        rgba(244,240,232,.62),
+        rgba(244,240,232,.62)
+    );
+}
+
+@media(max-width:800px) {
+    .hero-overlay {
+        background: linear-gradient(
+            rgba(244,240,232,.72),
+            rgba(244,240,232,.55)
+        );
+    }
+}
 
 
 </style>
@@ -1270,27 +1555,36 @@ footer{background:var(--cream);border-top-color:var(--line)}
 
 <header class="hero">
 
+    <img
+        class="hero-image"
+        src="https://drive.google.com/thumbnail?id=1unCNxPsE73TSow-yWWq9atSaxrW9ezM5&sz=w2000"
+        alt="Sophia and Liel"
+    >
+
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
 
-       <div class="names">
+        <div class="names">
 
-    <span class="sophia-name">
-        Sophia
-    </span>
+            <span class="sophia-name">
+                Sophia
+            </span>
 
-    <div class="second-line">
+            <div class="second-line">
 
-        <span class="ampersand">
-            &amp;
-        </span>
+                <span class="ampersand">
+                    &amp;
+                </span>
 
-        <span class="liel-name">
-            Liel
-        </span>
+                <span class="liel-name">
+                    Liel
+                </span>
 
-    </div>
+            </div>
 
-</div>
+        </div>
+
         <div class="save">
             Save the Date
         </div>
