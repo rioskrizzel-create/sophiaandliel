@@ -1503,6 +1503,86 @@ footer p {
 }
 
 
+
+/* =========================
+   HERO - FINAL POSITIONING
+========================= */
+
+/* Keep the entire hero content centered */
+.hero-content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+/* Move Sophia & Liel upward */
+.names {
+    position: relative;
+    top: -85px;
+}
+
+/* Put Save the Date directly below their names */
+.save {
+    position: relative;
+    margin-top: -70px;
+    color: #171613 !important;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .25em;
+}
+
+/* Put the date/details lower, below their faces */
+.date {
+    margin-top: 115px;
+    color: #1f1e1c !important;
+}
+
+.place {
+    margin-top: 12px;
+    color: #1f1e1c !important;
+}
+
+.hero-content .btn {
+    margin-top: 28px;
+}
+
+/* =========================
+   MOBILE - SAME CENTERED LAYOUT
+========================= */
+@media (max-width: 800px) {
+
+    .hero-content {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .names {
+        position: relative;
+        top: -55px;
+    }
+
+    .save {
+        margin-top: -45px;
+        color: #171613 !important;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .date {
+        margin-top: 90px;
+        font-size: 25px;
+    }
+
+    .place {
+        margin-top: 10px;
+    }
+
+    .hero-content .btn {
+        margin-top: 25px;
+    }
+}
+
 </style>
 </head>
 
