@@ -615,12 +615,22 @@ h2{
 }
 
 .script{
+   color:#4f4b45;
     font-family:"Gradientine Signature",cursive;
+    font-size:clamp(82px,10vw,132px);
+    line-height:.78;
+    font-weight:700;
+    letter-spacing:0;
+    display:inline-block;
 
-    color:var(--navy);
+    /* Stronger outline + glow */
+    -webkit-text-stroke:0.7px #4f4b45;
+    text-shadow:
+        0 0 1px rgba(60,56,50,0.95),
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.85),
+        0 1px 2px rgba(50,46,40,0.35);
 
-    font-size:48px;
-    line-height:1;
 }
 
 /* =========================
@@ -1015,13 +1025,21 @@ nav{
 
 .sophia-name,
 .liel-name{
-    color:#6f6b64;
+    color:#4f4b45;
     font-family:"Gradientine Signature",cursive;
     font-size:clamp(82px,10vw,132px);
     line-height:.78;
-    font-weight:400;
+    font-weight:500;
     letter-spacing:0;
     display:inline-block;
+
+    /* Stronger outline + glow */
+    -webkit-text-stroke:0.7px #4f4b45;
+    text-shadow:
+        0 0 1px rgba(60,56,50,0.95),
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.85),
+        0 1px 2px rgba(50,46,40,0.35);
 }
 
 .sophia-name{
@@ -1037,13 +1055,21 @@ nav{
 }
 
 .ampersand{
-    color:#77736b;
+    color:#55514a;
     font-family:"Gradientine Signature",cursive;
     font-size:clamp(52px,6vw,82px);
+    font-weight:500;
     line-height:1;
     margin-right:6px;
     top:0;
     position:relative;
+
+    /* Stronger outline + glow */
+    -webkit-text-stroke:0.6px #55514a;
+    text-shadow:
+        0 0 1px rgba(60,56,50,0.9),
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.8);
 }
 
 .save,
@@ -1055,30 +1081,33 @@ nav{
 .text-link,
 footer p{
     font-family:"Cormorant Garamond",Georgia,serif;
-    color:#77736b;
-    font-weight:600;
+    color:#55514a;
+    font-weight:700;
     letter-spacing:.25em;
+
+    /* Clearer outline/glow */
+    text-shadow:
+        0 0 1px rgba(70,66,60,0.9),
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.75);
 }
 
 .save{
     margin-top:38px;
     font-size:15px;
-
-    text-shadow:
-        0 0 3px rgba(255,250,240,0.95),
-        0 0 6px rgba(255,250,240,0.7);
 }
 
 .date{
-    color:#68645d;
+    color:#504c46;
     font-family:"Cormorant Garamond",Georgia,serif;
     font-size:28px;
-    font-weight:500;
+    font-weight:600;
     letter-spacing:.2em;
 
     text-shadow:
+        0 0 1px rgba(70,66,60,0.9),
         0 0 3px rgba(255,250,240,0.95),
-        0 0 6px rgba(255,250,240,0.7);
+        0 0 6px rgba(255,250,240,0.8);
 }
 
 .place{
