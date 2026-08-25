@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
 @font-face{
     font-family:"Gradientine Signature";
     src:url("https://db.onlinewebfonts.com/t/5be9b310ae7f8db70fa685103f9084e1.woff2") format("woff2");
@@ -36,14 +37,20 @@
 
 html{
     scroll-behavior:smooth;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
 body{
     margin:0;
+    width:100%;
+    max-width:100%;
     background:var(--cream);
     color:var(--navy);
     font-family:"Cormorant Garamond", Georgia, serif;
     line-height:1.6;
+    overflow-x:hidden;
 }
 
 /* =========================
@@ -127,8 +134,8 @@ nav.nav-hidden {
 
 .names{
     max-width:520px;
-    position: relative;
-    transform: translateY(-45px);
+    position:relative;
+    transform:translateY(-45px);
 }
 
 .sophia-name{
@@ -138,7 +145,6 @@ nav.nav-hidden {
 
     font-family:"Cormorant Garamond",serif;
 
-    /* BIGGER */
     font-size:clamp(100px,14vw,175px);
 
     line-height:.72;
@@ -146,63 +152,60 @@ nav.nav-hidden {
     font-weight:400;
 }
 
-.sophia-name {
-    display: block;
+.sophia-name{
+    display:block;
 
-    color: var(--teal);
+    color:var(--teal);
 
-    font-family: "Cormorant Garamond", serif;
+    font-family:"Cormorant Garamond",serif;
 
-    font-size: clamp(130px, 16vw, 210px);
+    font-size:clamp(130px,16vw,210px);
 
-    line-height: .68;
+    line-height:.68;
 
-    font-weight: 400;
+    font-weight:400;
 
-    letter-spacing: -0.06em;
+    letter-spacing:-0.06em;
 }
 
+.second-line{
+    display:flex;
 
-.second-line {
-    display: flex;
+    align-items:center;
 
-    align-items: center;
+    margin-left:110px;
 
-    margin-left: 110px;
-
-    margin-top: 15px;
+    margin-top:15px;
 }
 
+.liel-name{
+    color:var(--navy);
 
-.liel-name {
-    color: var(--navy);
+    font-family:"Cormorant Garamond",serif;
 
-    font-family: "Cormorant Garamond", serif;
+    font-size:clamp(130px,16vw,210px);
 
-    font-size: clamp(130px, 16vw, 210px);
+    line-height:.68;
 
-    line-height: .68;
+    font-weight:400;
 
-    font-weight: 400;
-
-    letter-spacing: -0.06em;
+    letter-spacing:-0.06em;
 }
 
+.ampersand{
+    color:var(--navy);
 
-.ampersand {
-    color: var(--navy);
+    font-family:"Gradientine Signature",cursive;
 
-    font-family: "Gradientine Signature", cursive;
+    font-size:clamp(105px,12vw,160px);
 
-    font-size: clamp(105px, 12vw, 160px);
+    line-height:1;
 
-    line-height: 1;
+    margin-right:15px;
 
-    margin-right: 15px;
+    position:relative;
 
-    position: relative;
-
-    top: -8px;
+    top:-8px;
 }
 
 .hero-script{
@@ -212,7 +215,6 @@ nav.nav-hidden {
 
     font-family:"Gradientine Signature",cursive;
 
-    /* BIGGER */
     font-size:clamp(120px,15vw,190px);
 
     line-height:.75;
@@ -229,8 +231,8 @@ nav.nav-hidden {
 
     color:var(--navy);
     text-transform:uppercase;
-    position: relative;
-    transform: translateY(20px);
+    position:relative;
+    transform:translateY(20px);
 }
 
 .date{
@@ -243,8 +245,8 @@ nav.nav-hidden {
     font-size:38px;
 
     letter-spacing:.16em;
-     position: relative;
-    transform: translateY(25px);
+    position:relative;
+    transform:translateY(25px);
 }
 
 .place{
@@ -257,8 +259,8 @@ nav.nav-hidden {
     letter-spacing:.25em;
 
     text-transform:uppercase;
-     position: relative;
-    transform: translateY(30px);
+    position:relative;
+    transform:translateY(30px);
 }
 
 .btn{
@@ -280,8 +282,8 @@ nav.nav-hidden {
     letter-spacing:.20em;
 
     text-transform:uppercase;
-     position: relative;
-    transform: translateY(35px);
+    position:relative;
+    transform:translateY(35px);
 }
 
 .btn:hover{
@@ -292,28 +294,27 @@ nav.nav-hidden {
    MOBILE
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .names {
-        transform: translateY(-60px);
+    .names{
+        transform:translateY(-65px);
     }
 
-    .save {
-        transform: translateY(70px);
+    .save{
+        transform:translateY(70px);
     }
 
-    .date {
-        transform: translateY(70px);
+    .date{
+        transform:translateY(70px);
     }
 
-    .place {
-        transform: translateY(75px);
+    .place{
+        transform:translateY(75px);
     }
 
-    .btn {
-        transform: translateY(80px);
+    .btn{
+        transform:translateY(80px);
     }
-
 }
 
 /* =========================
@@ -439,6 +440,7 @@ h2{
     display:grid;
     border:1px solid var(--line);
 }
+
 .travel-content{
     padding:55px;
     background:var(--cream);
@@ -600,12 +602,12 @@ h2{
         linear-gradient(
             rgba(248,244,236,.92),
             rgba(248,244,236,.92)
-        ),
+        );
 }
 
-.rsvp-box{ 
-    max-width:700px; 
-    margin:auto; 
+.rsvp-box{
+    max-width:700px;
+    margin:auto;
     text-align:center;
 
     position:relative;
@@ -703,7 +705,7 @@ footer p{
    MOBILE
 ========================= */
 
-@media(max-width:800px){
+@media(max-width:768px){
 
     .nav-links{
         display:none;
@@ -714,8 +716,7 @@ footer p{
             linear-gradient(
                 rgba(248,244,236,.88),
                 rgba(248,244,236,.45)
-            ),
-           
+            );
     }
 
     .hero-content{
@@ -790,7 +791,6 @@ footer p{
     align-items:center;
 }
 
-
 /* LEFT SIDE */
 
 .wedding-message{
@@ -800,7 +800,7 @@ footer p{
 .wedding-message .kicker{
     color:#2d6667;
 
-    font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat",sans-serif;
     font-size:10px;
 
     letter-spacing:.32em;
@@ -813,7 +813,7 @@ footer p{
 .wedding-quote{
     color:#2d6667;
 
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
 
     font-size:clamp(40px,4vw,58px);
 
@@ -833,13 +833,12 @@ footer p{
 
     color:#66717d;
 
-    font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat",sans-serif;
 
     font-size:15px;
 
     line-height:1.95;
 }
-
 
 /* RIGHT SIDE CARD */
 
@@ -854,7 +853,7 @@ footer p{
 .details-heading{
     color:#2d6667;
 
-    font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat",sans-serif;
 
     font-size:10px;
 
@@ -864,7 +863,6 @@ footer p{
 
     margin-bottom:8px;
 }
-
 
 /* DETAILS */
 
@@ -901,7 +899,7 @@ footer p{
 .detail-label{
     color:#6c7781;
 
-    font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat",sans-serif;
 
     font-size:9px;
 
@@ -915,17 +913,16 @@ footer p{
 .detail-value{
     color:#4f5962;
 
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
 
     font-size:20px;
 
     line-height:1.2;
 }
 
-
 /* MOBILE */
 
-@media(max-width:800px){
+@media(max-width:768px){
 
     #wedding{
         padding:70px 22px;
@@ -944,16 +941,12 @@ footer p{
     .details-card{
         padding:28px 24px;
     }
-
 }
-
-
-
 
 /* =========================
    SAVE-THE-DATE EDITORIAL STYLE
-   Inspired by the provided vintage coastal invitation
 ========================= */
+
 :root{
     --cream:#f4f0e8;
     --cream-dark:#e9e3d8;
@@ -968,7 +961,7 @@ footer p{
 body{
     background:var(--cream);
     color:var(--navy);
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
 }
 
 nav{
@@ -978,41 +971,52 @@ nav{
 
 .logo{
     color:var(--navy);
-    font-family:"Gradientine Signature", cursive;
+    font-family:"Gradientine Signature",cursive;
     font-size:36px;
     letter-spacing:0;
 }
 
-.logo span{color:var(--navy);font-family:"Gradientine Signature", cursive;font-size:40px}
+.logo span{
+    color:var(--navy);
+    font-family:"Gradientine Signature",cursive;
+    font-size:40px
+}
 
 .nav-links a{
     color:var(--navy);
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
     font-size:12px;
     font-weight:500;
     letter-spacing:.18em;
 }
 
-.nav-links a:hover{color:#8a857c}
+.nav-links a:hover{
+    color:#8a857c
+}
 
 .nav-rsvp,
 .btn{
     background:#6f6b63;
     color:#fdfaf4 !important;
     border-radius:0;
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
     font-weight:600;
     letter-spacing:.18em;
 }
 
+.hero-content{
+    text-align:center
+}
 
-.hero-content{text-align:center}
-.names{max-width:none;margin:auto}
+.names{
+    max-width:none;
+    margin:auto
+}
 
 .sophia-name,
 .liel-name{
     color:#6f6b64;
-    font-family:"Gradientine Signature", cursive;
+    font-family:"Gradientine Signature",cursive;
     font-size:clamp(82px,10vw,132px);
     line-height:.78;
     font-weight:400;
@@ -1020,7 +1024,9 @@ nav{
     display:inline-block;
 }
 
-.sophia-name{display:inline-block}
+.sophia-name{
+    display:inline-block
+}
 
 .second-line{
     justify-content:center;
@@ -1032,15 +1038,12 @@ nav{
 
 .ampersand{
     color:#77736b;
-    font-family:"Gradientine Signature", cursive;
+    font-family:"Gradientine Signature",cursive;
     font-size:clamp(52px,6vw,82px);
     line-height:1;
     margin-right:6px;
     top:0;
     position:relative;
-     text-shadow:
-        0 0 3px rgba(255, 250, 240, 0.95),
-        0 0 6px rgba(255, 250, 240, 0.7);
 }
 
 .save,
@@ -1051,7 +1054,7 @@ nav{
 .event-date,
 .text-link,
 footer p{
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
     color:#77736b;
     font-weight:600;
     letter-spacing:.25em;
@@ -1060,30 +1063,40 @@ footer p{
 .save{
     margin-top:38px;
     font-size:15px;
-     text-shadow:
-        0 0 3px rgba(255, 250, 240, 0.95),
-        0 0 6px rgba(255, 250, 240, 0.7);
+
+    text-shadow:
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.7);
 }
 
 .date{
     color:#68645d;
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
     font-size:28px;
     font-weight:500;
     letter-spacing:.2em;
-     text-shadow:
-        0 0 3px rgba(255, 250, 240, 0.95),
-        0 0 6px rgba(255, 250, 240, 0.7);
+
+    text-shadow:
+        0 0 3px rgba(255,250,240,0.95),
+        0 0 6px rgba(255,250,240,0.7);
 }
 
-.place{font-size:15px;letter-spacing:.28em}
+.place{
+    font-size:15px;
+    letter-spacing:.28em
+}
 
-section{background:var(--cream)}
-.sand{background:var(--cream-dark)}
+section{
+    background:var(--cream)
+}
+
+.sand{
+    background:var(--cream-dark)
+}
 
 h2{
     color:#6c6861;
-    font-family:"Cormorant Garamond", Georgia, serif;
+    font-family:"Cormorant Garamond",Georgia,serif;
     font-weight:500;
 }
 
@@ -1117,18 +1130,47 @@ details{
     background:rgba(250,247,240,.72);
 }
 
-.details-card{background:rgba(250,247,240,.82);border-color:var(--line)}
-.detail-row{border-bottom-color:var(--line)}
-.detail-value{font-family:"Cormorant Garamond",Georgia,serif;color:#625f58}
-.detail-label{color:#807b73}
-.detail-icon{color:#8c877f}
+.details-card{
+    background:rgba(250,247,240,.82);
+    border-color:var(--line)
+}
 
-.wedding-message p{font-family:"Cormorant Garamond",Georgia,serif;color:#77736b;font-size:18px;line-height:1.7}
-.wedding-quote{font-family:"Gradientine Signature",cursive;font-size:clamp(52px,5vw,72px);line-height:.95}
+.detail-row{
+    border-bottom-color:var(--line)
+}
+
+.detail-value{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    color:#625f58
+}
+
+.detail-label{
+    color:#807b73
+}
+
+.detail-icon{
+    color:#8c877f
+}
+
+.wedding-message p{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    color:#77736b;
+    font-size:18px;
+    line-height:1.7
+}
+
+.wedding-quote{
+    font-family:"Gradientine Signature",cursive;
+    font-size:clamp(52px,5vw,72px);
+    line-height:.95
+}
 
 .rsvp-section{
     background:
-        linear-gradient(rgba(244,240,232,.91),rgba(244,240,232,.91)),
+        linear-gradient(
+            rgba(244,240,232,.91),
+            rgba(244,240,232,.91)
+        ),
         url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85")
         center/cover;
     background-blend-mode:luminosity;
@@ -1136,105 +1178,143 @@ details{
 
 .script{
     font-family:"Gradientine Signature",cursive;
-    font-size: 63px;
-    color: #3f3d39;
-    font-weight: 500;
+    font-size:63px;
+    color:#3f3d39;
+    font-weight:500;
 }
 
-footer{background:var(--cream);border-top-color:var(--line)}
-.footer-logo{font-family:"Gradientine Signature",cursive;font-size:52px}
-.footer-logo span{font-family:"Gradientine Signature",cursive;color:#77736b;font-size:56px}
-
-@media(max-width:800px){
-    .hero-content{padding:90px 25px}
-    .sophia-name,.liel-name{font-size:clamp(66px,18vw,105px)}
-    .ampersand{font-size:62px}
-    .save{font-size:12px}
-    .date{font-size:25px}
+footer{
+    background:var(--cream);
+    border-top-color:var(--line)
 }
 
+.footer-logo{
+    font-family:"Gradientine Signature",cursive;
+    font-size:52px
+}
 
+.footer-logo span{
+    font-family:"Gradientine Signature",cursive;
+    color:#77736b;
+    font-size:56px
+}
 
-.room-rates {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-    border: 1.5px solid #b8b1a7;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    background: var(--white);
+@media(max-width:768px){
+
+    .hero-content{
+        padding:90px 25px
+    }
+
+    .sophia-name,
+    .liel-name{
+        font-size:clamp(66px,18vw,105px)
+    }
+
+    .ampersand{
+        font-size:62px
+    }
+
+    .save{
+        font-size:12px
+    }
+
+    .date{
+        font-size:25px
+    }
+}
+
+/* =========================
+   ROOM RATES
+========================= */
+
+.room-rates{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    border:1.5px solid #b8b1a7;
+    font-family:"Montserrat",sans-serif;
+    font-size:14px;
+    background:var(--white);
 }
 
 .room-rates th,
-.room-rates td {
-    border: 1px solid #c8c1b7;
-    padding: 17px 18px;
-    text-align: left;
+.room-rates td{
+    border:1px solid #c8c1b7;
+    padding:17px 18px;
+    text-align:left;
 }
 
-.room-rates th {
-    color: var(--navy);
-    font-size: 11px;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    font-weight: 500;
-    background: var(--cream-dark);
-    padding: 18px;
+.room-rates th{
+    color:var(--navy);
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    font-weight:500;
+    background:var(--cream-dark);
+    padding:18px;
 }
 
-.room-rates td {
-    color: var(--navy);
-    font-size: 14px;
+.room-rates td{
+    color:var(--navy);
+    font-size:14px;
 }
 
-.room-rates td:last-child {
-    white-space: nowrap;
-    font-weight: 500;
-    text-align: right;
+.room-rates td:last-child{
+    white-space:nowrap;
+    font-weight:500;
+    text-align:right;
 }
 
-.rate-note {
-    margin: 14px 0 0;
-    color: var(--muted);
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    line-height: 1.5;
-    text-align: center;
+.rate-note{
+    margin:14px 0 0;
+    color:var(--muted);
+    font-family:"Montserrat",sans-serif;
+    font-size:10px;
+    line-height:1.5;
+    text-align:center;
 }
 
-@media (max-width: 650px) {
-    .room-rates {
-        font-size: 12px;
+@media(max-width:768px){
+
+    .room-rates{
+        font-size:12px;
+        width:100%;
+        table-layout:fixed;
     }
 
     .room-rates th,
-    .room-rates td {
-        padding: 13px 10px;
+    .room-rates td{
+        padding:13px 10px;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
     }
 
-    .room-rates th {
-        font-size: 9px;
+    .room-rates th{
+        font-size:9px;
     }
 
-    .room-rates td {
-        font-size: 12px;
+    .room-rates td{
+        font-size:12px;
     }
 }
 
-.hotel-reservation-title {
-    font-size: 28px;
-    font-weight: bold;
+.hotel-reservation-title{
+    font-size:28px;
+    font-weight:bold;
 }
 
-.stay-list {
-    text-align: left;
+.stay-list{
+    text-align:left;
 }
 
-.reservation-heading {
-    font-size: 20px;
-    font-weight: bold;
+.reservation-heading{
+    font-size:20px;
+    font-weight:bold;
 }
 
+/* =========================
+   HERO IMAGE
+========================= */
 
 .hero{
     position:relative;
@@ -1262,9 +1342,9 @@ footer{background:var(--cream);border-top-color:var(--line)}
     z-index:1;
 
     background:linear-gradient(
-            rgba(244,240,232,.65),
-            rgba(244,240,232,.65)
-        );
+        rgba(244,240,232,.65),
+        rgba(244,240,232,.65)
+    );
 }
 
 .hero-content{
@@ -1273,17 +1353,25 @@ footer{background:var(--cream);border-top-color:var(--line)}
     width:100%;
     max-width:1200px;
     margin:auto;
-    
+
     padding:70px 7%;
 }
 
-@media(max-width:800px){
+/* FIXED MOBILE MEDIA QUERY */
+
+@media(max-width:768px){
 
     .hero{
         min-height:100vh;
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
     }
 
     .hero-image{
+        width:100%;
+        max-width:none;
+        height:125%;
         object-position:center;
     }
 
@@ -1295,15 +1383,24 @@ footer{background:var(--cream);border-top-color:var(--line)}
     }
 
     .hero-content{
+        width:100%;
+        max-width:100%;
         padding:90px 25px;
     }
 }
 
-@media (max-width: 768px){
+/* FIXED MOBILE MEDIA QUERY */
+
+@media(max-width:800px){
+
     .hero-image{
-        height:140%;
+        height:125%;
     }
 }
+
+/* =========================
+   RSVP SECTION
+========================= */
 
 .rsvp-section{
     min-height:500px;
@@ -1323,240 +1420,338 @@ footer{background:var(--cream);border-top-color:var(--line)}
    DARKER TEXT - FINAL OVERRIDE
 ========================= */
 
-/* Main text */
-body {
-    color: #1f1e1c;
+body{
+    color:#1f1e1c;
 }
 
-/* Navigation */
 .logo,
-.logo span {
-    color: #1f1e1c;
+.logo span{
+    color:#1f1e1c;
 }
 
-.nav-links a {
-    color: #1f1e1c;
+.nav-links a{
+    color:#1f1e1c;
 }
 
-.nav-links a:hover {
-    color: #33312d;
+.nav-links a:hover{
+    color:#33312d;
 }
 
 /* HERO */
+
 .sophia-name,
-.liel-name {
-    color: #252421;
+.liel-name{
+    color:#252421;
 }
 
-.ampersand {
-    color: #252421;
+.ampersand{
+    color:#252421;
 }
 
-.save {
-    color: #242320;
+.save{
+    color:#242320;
 }
 
-.date {
-    color: #252421;
+.date{
+    color:#252421;
 }
 
-.place {
-    color: #242320;
+.place{
+    color:#242320;
 }
 
 /* Buttons */
+
 .nav-rsvp,
-.btn {
-    background: #242320;
-    color: #fffdf8 !important;
+.btn{
+    background:#242320;
+    color:#fffdf8 !important;
 }
 
 /* Section headings */
-.kicker {
-    color: #292825;
+
+.kicker{
+    color:#292825;
 }
 
-h2 {
-    color: #242320;
+h2{
+    color:#242320;
 }
 
-.intro {
-    color: #302e2a;
+.intro{
+    color:#302e2a;
 }
 
 /* Quick links */
-.icon {
-    color: #302e2b;
+
+.icon{
+    color:#302e2b;
 }
 
-.icon-card h3 {
-    color: #252421;
+.icon-card h3{
+    color:#252421;
 }
 
-.icon-card p {
-    color: #302e2b;
+.icon-card p{
+    color:#302e2b;
 }
 
-.text-link {
-    color: #242320;
+.text-link{
+    color:#242320;
 }
 
 /* Travel */
+
 .travel-content h3,
-.stay-content h3 {
-    color: #252421;
+.stay-content h3{
+    color:#252421;
 }
 
 .travel-content p,
-.stay-content p {
-    color: #302e2b;
+.stay-content p{
+    color:#302e2b;
 }
 
-.detail {
-    color: #302e2b;
+.detail{
+    color:#302e2b;
 }
 
 /* Stay */
-.stay-list li {
-    color: #302e2b;
+
+.stay-list li{
+    color:#302e2b;
 }
 
-.stay-list p {
-    color: #302e2b;
+.stay-list p{
+    color:#302e2b;
 }
 
 .hotel-reservations-title,
-.reservation-heading {
-    color: #252421;
+.reservation-heading{
+    color:#252421;
 }
 
 /* Wedding weekend */
-.event-circle {
-    color: #302e2b;
+
+.event-circle{
+    color:#302e2b;
 }
 
-.event h3 {
-    color: #252421;
+.event h3{
+    color:#252421;
 }
 
-.event-date {
-    color: #292825;
+.event-date{
+    color:#292825;
 }
 
-.event p {
-    color: #302e2b;
+.event p{
+    color:#302e2b;
 }
 
 /* Wedding section */
-.wedding-message .kicker {
-    color: #292825;
+
+.wedding-message .kicker{
+    color:#292825;
 }
 
-.wedding-quote {
-    color: #252421;
+.wedding-quote{
+    color:#252421;
 }
 
-.wedding-message p {
-    color: #2d2b27;
+.wedding-message p{
+    color:#2d2b27;
 }
 
-.details-heading {
-    color: #292825;
+.details-heading{
+    color:#292825;
 }
 
-.detail-label {
-    color: #302e2b;
+.detail-label{
+    color:#302e2b;
 }
 
-.detail-value {
-    color: #242320;
+.detail-value{
+    color:#242320;
 }
 
-.detail-icon {
-    color: #302e2b;
+.detail-icon{
+    color:#302e2b;
 }
 
 /* RSVP */
-.rsvp-section .kicker {
-    color: #252421;
+
+.rsvp-section .kicker{
+    color:#252421;
 }
 
-.rsvp-section h2 {
-    color: #242320;
+.rsvp-section h2{
+    color:#242320;
 }
 
-.script {
-    color: #252421;
+.script{
+    color:#252421;
 }
 
-.rsvp-section .intro {
-    color: #2d2b27;
+.rsvp-section .intro{
+    color:#2d2b27;
 }
 
-.rsvp-section p {
-    color: #2d2b27 !important;
+.rsvp-section p{
+    color:#2d2b27 !important;
 }
 
 /* FAQ */
-summary {
-    color: #252421;
+
+summary{
+    color:#252421;
 }
 
-details p {
-    color: #302e2b;
+details p{
+    color:#302e2b;
 }
 
 /* Room rates */
-.room-rates th {
-    color: #242320;
+
+.room-rates th{
+    color:#242320;
 }
 
-.room-rates td {
-    color: #252421;
+.room-rates td{
+    color:#252421;
 }
 
-.rate-note {
-    color: #302e2b;
+.rate-note{
+    color:#302e2b;
 }
 
 /* Footer */
+
 .footer-logo,
-.footer-logo span {
-    color: #252421;
+.footer-logo span{
+    color:#252421;
 }
 
-footer p {
-    color: #302e2b;
+footer p{
+    color:#302e2b;
 }
 
 /* =========================
    HERO OVERLAY
-   Keep image visible but text readable
 ========================= */
 
-.hero-overlay {
-    background: linear-gradient(
+.hero-overlay{
+    background:linear-gradient(
         rgba(244,240,232,.62),
         rgba(244,240,232,.62)
     );
 }
 
-@media(max-width:800px) {
-    .hero-overlay {
-        background: linear-gradient(
+@media(max-width:768px){
+
+    .hero-overlay{
+        background:linear-gradient(
             rgba(244,240,232,.72),
             rgba(244,240,232,.55)
         );
     }
 }
 
+/* =========================
+   MOBILE FULL-WIDTH FIX
+   Does NOT change fonts
+========================= */
+
+@media(max-width:768px){
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .hero,
+    section,
+    footer{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:100%;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .names{
+        width:100%;
+        max-width:100%;
+    }
+
+    .second-line{
+        max-width:100%;
+    }
+
+    .stay-content{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .room-rates{
+        width:100%;
+        max-width:100%;
+        table-layout:fixed;
+    }
+
+    .room-rates th,
+    .room-rates td{
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+    }
+
+    .travel-content,
+    .wedding-message,
+    .details-card,
+    .rsvp-box{
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+    .rsvp-section{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    .hero-content{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .room-rates th,
+    .room-rates td{
+        padding:8px 5px;
+        font-size:10px;
+    }
+
+    .room-rates td:last-child{
+        white-space:normal;
+    }
+}
 
 </style>
-
-
 </head>
-
-
 
 <body>
 
@@ -1637,6 +1832,11 @@ footer p {
 
         </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+
         <div class="save">
             Save the Date
         </div>
@@ -1657,7 +1857,7 @@ footer p {
 
 </header>
 
-         
+
 <!-- =========================
      TRAVEL
 ========================= -->
@@ -1692,14 +1892,10 @@ footer p {
                 </h3>
 
                 <p>
-
                     We recommend flying into Puerto Vallarta International Airport (PVR) in Puerto Vallarta, Jalisco, Mexico. From the airport, guests can continue to Punta Mita by private transfer, taxi, or rental car.
-
                 </p>
 
-
                 <div class="details">
-
 
                     <div class="detail">
                         ◎ Approximately 45 minutes to Punta Mita
@@ -1755,73 +1951,92 @@ footer p {
                 </h3>
 
                 <p>
-
-                  We’ve reserved a room block at the Conrad Punta de Mita for our wedding guests. Please use our dedicated booking link to reserve your stay and enjoy our special wedding rate.
-
+                    We’ve reserved a room block at the Conrad Punta de Mita for our wedding guests. Please use our dedicated booking link to reserve your stay and enjoy our special wedding rate.
                 </p>
-               
 
-                 <div class="stay-content">
 
-                  <h2 class="hotel-reservations-title">Hotel Reservations</h2>
-                </p>
-                <ul class="stay-list">
-                    <p>A limited number of rooms have been reserved for our guests at a special wedding rate. We encourage you to book early, as rooms at this rate are limited and subject to availability.</p>
+                <div class="stay-content">
 
-                    <li>
-                       <p>➤ <strong>Book Your Room</strong></p>
+                    <h2 class="hotel-reservations-title">
+                        Hotel Reservations
+                    </h2>
+
+                    <ul class="stay-list">
 
                         <p>
-                   To receive our special wedding rate, please make your initial reservation through the dedicated booking button below:
-                   <br>
-                   <br>
-                  <strong> Wedding Stay Dates</strong>
-                   <br>
-                   <br>
-                    ✸ Check-in: March 14 or March 15, 2027 
-                    <br>
-                    ✸ Check-out: March 17, 2027
-                    <br>
-                    <br>
+                            A limited number of rooms have been reserved for our guests at a special wedding rate. We encourage you to book early, as rooms at this rate are limited and subject to availability.
+                        </p>
 
-                    Please note that the dedicated booking link is valid only for reservations within these dates
+                        <li>
 
-                </p>
-                    </li>
+                            <p>
+                                ➤ <strong>Book Your Room</strong>
+                            </p>
 
-                    <li>
-                       <p> ➤ <strong>Upgrades, Extended Stays & Special Requests </strong></p>
+                            <p>
+                                To receive our special wedding rate, please make your initial reservation through the dedicated booking button below:
+                                <br>
+                                <br>
 
-                        <p>
-                   After completing your reservation through the dedicated link, guests wishing to upgrade their room, extend their stay, or make a special request may contact the Conrad Punta de Mita Reservations Department directly:
-                   <br>
-                   <br>
-                   ✸ Email: cpm.reservations@ConradHotels.com
-                   <br>
-                    ✸ Phone: +52 329 298 4300
-                   <br>
-                   <br>
-                  To ensure you receive the special wedding rate for Sophia Ratner-Stauber & Liel Amenu’s wedding, please contact the hotel directly using the email address or phone number above. The Hilton International Reservations Call Center does not have access to our special wedding rates.
-                    <br>
-                     <br>
-                   <strong> Reservations Hours </strong>
-                    <br>
-                    <br>
-                   ✸ Monday–Friday: 9:00 AM–7:30 PM Central Time
-                   <br>
-                    ✸ Saturday–Sunday: 9:00 AM–6:00 PM Central Time
+                                <strong>Wedding Stay Dates</strong>
 
+                                <br>
+                                <br>
 
-                </p>
-                    </li>
+                                ✸ Check-in: March 14 or March 15, 2027
+                                <br>
+                                ✸ Check-out: March 17, 2027
 
-                </ul>
+                                <br>
+                                <br>
 
-            </div>
+                                Please note that the dedicated booking link is valid only for reservations within these dates
 
+                            </p>
 
+                        </li>
 
-                <!-- Replace # with hotel booking URL -->
+                        <li>
+
+                            <p>
+                                ➤ <strong>Upgrades, Extended Stays & Special Requests</strong>
+                            </p>
+
+                            <p>
+                                After completing your reservation through the dedicated link, guests wishing to upgrade their room, extend their stay, or make a special request may contact the Conrad Punta de Mita Reservations Department directly:
+
+                                <br>
+                                <br>
+
+                                ✸ Email: cpm.reservations@ConradHotels.com
+                                <br>
+                                ✸ Phone: +52 329 298 4300
+
+                                <br>
+                                <br>
+
+                                To ensure you receive the special wedding rate for Sophia Ratner-Stauber & Liel Amenu’s wedding, please contact the hotel directly using the email address or phone number above. The Hilton International Reservations Call Center does not have access to our special wedding rates.
+
+                                <br>
+                                <br>
+
+                                <strong>Reservations Hours</strong>
+
+                                <br>
+                                <br>
+
+                                ✸ Monday–Friday: 9:00 AM–7:30 PM Central Time
+                                <br>
+                                ✸ Saturday–Sunday: 9:00 AM–6:00 PM Central Time
+
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
 
                 <a class="btn" href="https://book.passkey.com/event/51313548/owner/50259214/landing">
                     BOOK YOUR STAY
@@ -1831,63 +2046,81 @@ footer p {
 
 
             <div class="stay-content">
-                <center> <h3>Wedding Room Rates</h3> </center>
+
+                <center>
+                    <h3>Wedding Room Rates</h3>
+                </center>
 
                 <table class="room-rates">
-        <thead>
-            <tr>
-                <th>Room Type</th>
-                <th>Wedding Contract</th>
-            </tr>
-        </thead>
 
-        <tbody>
-            <tr>
-                <td>Tropical View One King Bed</td>
-                <td>$359 USD++</td>
-            </tr>
-            <tr>
-                <td>Ocean View One King Bed</td>
-                <td>$399 USD++</td>
-            </tr>
-            <tr>
-                <td>Ocean View Two Queen Beds</td>
-                <td>$399 USD++</td>
-            </tr>
-            <tr>
-                <td>Beachfront One King Bed</td>
-                <td>$528 USD++</td>
-            </tr>
-            <tr>
-                <td>Superior Ocean View Suite One King Bed</td>
-                <td>$658 USD++</td>
-            </tr>
-            <tr>
-                <td>Signature Ocean View Suite One King Bed</td>
-                <td>$738 USD++</td>
-            </tr>
-            <tr>
-                <td>Beachfront Signature Suite One King Bed</td>
-                <td>$818 USD++</td>
-            </tr>
-            <tr>
-                <td>Beachfront Premier Suite One King Bed</td>
-                <td>$858 USD++</td>
-            </tr>
-            <tr>
-                <td>Penthouse</td>
-                <td>$1,800 USD++</td>
-            </tr>
-            <tr>
-                <td>Grand Suite Beachfront</td>
-                <td>$1,800 USD++</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-    Please note: A limited number of rooms have been reserved at our special wedding rates. 
-    We encourage guests to book early to secure the reduced rate, as rooms are subject to availability.
-</p>
+                    <thead>
+
+                        <tr>
+                            <th>Room Type</th>
+                            <th>Wedding Contract</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Tropical View One King Bed</td>
+                            <td>$359 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ocean View One King Bed</td>
+                            <td>$399 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ocean View Two Queen Beds</td>
+                            <td>$399 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Beachfront One King Bed</td>
+                            <td>$528 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Superior Ocean View Suite One King Bed</td>
+                            <td>$658 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Signature Ocean View Suite One King Bed</td>
+                            <td>$738 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Beachfront Signature Suite One King Bed</td>
+                            <td>$818 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Beachfront Premier Suite One King Bed</td>
+                            <td>$858 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Penthouse</td>
+                            <td>$1,800 USD++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Grand Suite Beachfront</td>
+                            <td>$1,800 USD++</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <p>
+                    Please note: A limited number of rooms have been reserved at our special wedding rates. We encourage guests to book early to secure the reduced rate, as rooms are subject to availability.
+                </p>
 
             </div>
 
@@ -1915,9 +2148,7 @@ footer p {
         </h2>
 
 
-
         <div class="timeline">
-
 
             <div class="event">
 
@@ -1932,17 +2163,18 @@ footer p {
                 <h3>
                     Welcome Dinner
                 </h3>
-                  <p>
+
+                <p>
                     Conrad Punta de Mita
                 </p>
 
-
             </div>
 
-             <div class="event">
+
+            <div class="event">
 
                 <div class="event-circle">
-                   ✧
+                    ✧
                 </div>
 
                 <div class="event-date">
@@ -1958,6 +2190,7 @@ footer p {
                 </p>
 
             </div>
+
 
             <div class="event">
 
@@ -1975,10 +2208,13 @@ footer p {
 
                 <p>
                     Ceremony at 5:00 PM
-                    <br> Papelillo - Punta Mita
+                    <br>
+                    Papelillo - Punta Mita
                 </p>
 
             </div>
+
+
             <div class="event">
 
                 <div class="event-circle">
@@ -1999,7 +2235,6 @@ footer p {
 
             </div>
 
-
         </div>
 
     </div>
@@ -2015,16 +2250,13 @@ footer p {
 
     <div class="rsvp-box">
 
-
         <div class="script">
             We hope you can join us!
         </div>
 
-    <br>
+        <br>
 
         <p class="intro">
-
-    
         </p>
 
         <br>
@@ -2036,17 +2268,13 @@ footer p {
         <br>
         <br>
         <br>
-         <br>
-          <br>
-           <br>
-
-
-        <!-- Replace # with actual RSVP link -->
+        <br>
+        <br>
+        <br>
 
         <a class="btn" href="rsvp.html">
             RSVP NOW
         </a>
-
 
     </div>
 
@@ -2075,9 +2303,6 @@ footer p {
     </p>
 
 </footer>
-
-
-
 
 </body>
 </html>
